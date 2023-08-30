@@ -1,101 +1,146 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lideflow</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: "Karla", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Karla", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-        header {
-            background-color: transparent;
-        }
+      header {
+        background-color: transparent;
+      }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
 
-        .navbar-brand img {
-            max-width: 10%;
-            height: auto;
-        }
+      .navbar-brand img {
+        max-width: 10%;
+        height: auto;
+      }
 
-        .page-title {
-            color: white;
-            text-transform: uppercase;
-            font-size: 2.5rem;
-            margin-top: 12rem;
-        }
+      .page-title {
+        color: white;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin-top: 12rem;
+      }
 
+      .page-description {
+        color: white;
+        font-size: 0.9rem;
+        margin-bottom: 12rem;
+        padding: auto;
+      }
+
+      .footer-social-links .social-link {
+        color: white;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .footer-social-links .social-link:last-child {
+        margin-right: 0;
+      }
+
+      .btn-start {
+        background-color: #1f2f98;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .btn-start:hover {
+        background-color: #0c175b;
+      }
+
+      @media only screen and (max-width: 480px) {
         .page-description {
-            color: white;
-            font-size: 0.9rem;
-            margin-bottom: 12rem;
-            padding: auto;
+          margin-bottom: 40px;
         }
 
-        .footer-social-links .social-link {
-            color: white;
-            margin-right: 1rem;
-            font-size: 1.25rem;
+        .footer-social-links {
+          position: fixed;
+          bottom: 50px;
+          left: 50%;
+          width: auto;
+          display: flex;
+          justify-content: center;
+          column-gap: 16px;
+          transform: translate(-50%, -50%);
         }
-
-        .footer-social-links .social-link:last-child {
-            margin-right: 0;
-        }
-
-        .btn-start {
-            background-color: #1F2F98;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        .btn-start:hover {
-            background-color: #0C175B;
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparent">
-                <a href="#" class="navbar-brand">
-                    <img src="picto-LideFlow.png" alt="logo">
-                </a>
-                <span class="navbar-text ml-auto d-none d-sm-inline-block">
-                    <nav class="footer-social-links">
-                        <a href="https://twitter.com/lideflow" class="social-link"><i class="mdi mdi-twitter"></i></a>
-                        <a href="https://www.instagram.com/lideflow" class="social-link"><i class="mdi mdi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/lideflow" class="social-link"><i class="mdi mdi-linkedin"></i></a>
-                    </nav>
-                </span>
+      <div class="container">
+        <nav class="navbar navbar-dark bg-transparent">
+          <a href="#" class="navbar-brand">
+            <img
+              src="picto-LideFlow.png"
+              alt="logo"
+            />
+          </a>
+          <span class="navbar-text ml-auto d-sm-inline-block">
+            <nav class="footer-social-links">
+              <a href="https://twitter.com/lideflow" class="social-link"
+                ><i class="mdi mdi-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/lideflow" class="social-link"
+                ><i class="mdi mdi-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/lideflow"
+                class="social-link"
+                ><i class="mdi mdi-linkedin"></i
+              ></a>
             </nav>
-        </div>
+          </span>
+        </nav>
+      </div>
     </header>
     <main class="my-auto">
-        <div class="container text-center">
-            <h1 class="page-title">Send Now, Pay Later</h1>
-            <p class="page-description">
-                Seamlessly send money to your loved ones across borders, and conveniently settle it later without any extra charge.
-            </p>
-            <button class="btn-start" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScD5ommruvnfE9Nj-LBCIOoVnWWRaTCSsGJ8mINJaeUvBZMpw/viewform?usp=sf_link'">Get started</button>
-        </div>
+      <div class="container text-center">
+        <h1 class="page-title">Send Now, Pay Later</h1>
+        <p class="page-description">
+          Seamlessly send money to your loved ones across borders, and
+          conveniently settle it later without any extra charge.
+        </p>
+        <button
+          class="btn-start"
+          onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScD5ommruvnfE9Nj-LBCIOoVnWWRaTCSsGJ8mINJaeUvBZMpw/viewform?usp=sf_link'"
+        >
+          Get started
+        </button>
+      </div>
     </main>
-</body>
+  </body>
 </html>
