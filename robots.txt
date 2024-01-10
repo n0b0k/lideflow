@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lideflow.money/sitemap.xml
