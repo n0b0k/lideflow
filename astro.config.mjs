@@ -12,7 +12,7 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
-  site: "https://landing-ekm.pages.dev",
+  site: "https://n0b0k.github.io",
   integrations: [tailwind()],
   adapter: cloudflare()
 });
